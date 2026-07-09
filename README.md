@@ -22,9 +22,9 @@ This example injects that tag from `src/main.js` after sign-in, adding
 ## Run it
 
 ```bash
-bun install
+pnpm install
 cp .env.example .env   # optional — sensible defaults are baked in
-bun dev
+pnpm dev
 ```
 
 ## Configuration
