@@ -2,6 +2,6 @@ import { cloudflare } from "@cloudflare/vite-plugin";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-	base: '/connect/',
+	base: '/connect/vanillajs-example/',
 	plugins: [cloudflare()],
 });

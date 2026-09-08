@@ -13,5 +13,8 @@
     "@cloudflare/vite-plugin": "1.43.3",
     "vite": "8.1.4",
     "wrangler": "4.109.0"
+  },
+  "dependencies": {
+    "vanilla-cookieconsent": "3.1.0"
   }
 }

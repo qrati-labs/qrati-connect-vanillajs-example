@@ -1,8 +1,7 @@
 # Qrati Connect — Vanilla JS Example
 
 Embeds [Qrati Connect](https://qrati.com) into a plain HTML/JS page (Vite) using
-the no-code **embed script**, with a host-controlled light/dark theme and a demo
-login for organizations that use custom auth.
+the no-code **embed script**, with a host-controlled light/dark theme.
 
 ## Integration method: Embed script
 
@@ -16,8 +15,7 @@ A single `async` script tag mounts the widget where it sits. Config travels in
   data-router="hash"></script>
 ```
 
-This example injects that tag from `src/main.js` after sign-in, adding
-`data-uid` / `data-fname` / `data-lname` for the known user.
+This example injects that tag from `src/main.js` immediately on page load.
 
 ## Run it
 
@@ -33,7 +31,6 @@ pnpm dev
 | ------------------------ | ----------------------------------------------------------------- |
 | `VITE_ORGANIZATION_ID`   | Your Qrati organization ID                                        |
 | `VITE_QRATI_EMBED_URL`   | CDN URL of the embed script (`embed/embed.js`)                     |
-| `VITE_API_ENDPOINT`      | Demo-login endpoint for custom-auth orgs. Leave empty to skip it. |
 
 ## Other integration methods
 
