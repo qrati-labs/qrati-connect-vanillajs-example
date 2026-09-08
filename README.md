@@ -1,5 +1,9 @@
 # Qrati Connect — Vanilla JS Example
 
+[![Qrati Connect — embeddable event photo galleries](public/qrati-connect-og.png)](https://qrati.com/connect)
+
+Add a live event photo gallery to any HTML or JavaScript site with guest uploads, full-screen lightbox, emoji reactions, and photo-contest leaderboards. [Explore Qrati Connect](https://qrati.com/connect) or [view the live Vanilla JS example](https://qrati.com/connect/vanillajs-example).
+
 Embeds [Qrati Connect](https://qrati.com) into a plain HTML/JS page (Vite) using
 the no-code **embed script**, with a host-controlled light/dark theme.
 
