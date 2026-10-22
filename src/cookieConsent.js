@@ -1,4 +1,5 @@
 import * as CookieConsent from 'vanilla-cookieconsent'
+import { readGeoDecision } from './geoDecision.js'
 
 const GEO_STORAGE_KEY = 'qrati_geo_consent_required'
 const gtmId = import.meta.env.VITE_GTM_ID
@@ -31,7 +32,7 @@ async function checkConsentRequired() {
       ? '/api/cookie-consent-geo'
       : 'https://qrati.com/api/cookie-consent-geo'
     const response = await fetch(geoUrl, { cache: 'no-store' })
-    const { required } = await response.json()
+    const required = await readGeoDecision(response)
     sessionStorage.setItem(GEO_STORAGE_KEY, String(required))
     return required
   } catch {
